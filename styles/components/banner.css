@@ -1,0 +1,58 @@
+.banner {
+    background-image: url("../../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 895px;*/
+    border-top: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    background-position-x: center;
+}
+.banner__row {
+    box-sizing: border-box;
+    padding: 175px 206px 336px 275px;
+    width: 100%;
+}
+.banner__row .banner__text {
+    max-width: 420px;
+    margin: 30px 0 48px 0;
+}
+/*Notebook*/
+@media (max-width: 1740px) {
+    .banner__row {
+        padding: 120px 190px 200px 190px;
+
+    }
+    .banner__row .banner__text {
+        max-width: 294px;
+        margin: 21px 0 34px 0;
+    }
+}
+/*Ipad*/
+@media (max-width: 1040px) {
+    .banner__row {
+        padding: 99px 120px 135px;
+    }
+    .banner__row .banner__text {
+        max-width: 255px;
+        margin: 18px 0 29px 0;
+    }
+}
+@media (max-width: 768px) {
+    .banner__row {
+        padding: 47px 60px 65px;
+    }
+    .banner__row .banner__text {
+        max-width: 220px;
+        margin: 15px 0 25px 0;
+    }
+}
+/*Mobile*/
+@media (max-width: 375px) {
+    .banner__row {
+        padding: 15px 40px 30px;
+    }
+    .banner__row .banner__text {
+        max-width: 195px;
+    }
+}
+

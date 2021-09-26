@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Olivio</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--Mobile menu-->
+<div id="mob_menu" class="mobileMenu">
+    <div class="close"></div>
+    <div class="row__mobile_menu">
+        <div class="navigate_mobile">
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#" title="Why Alivio">Why Alivio</a></li>
+                    <li><a href="#" title="Solutions">Solutions</a></li>
+                    <li><a href="#" title="Community">Community</a></li>
+                    <li><a href="#" title="Pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="do_account_mobile">
+            <div class="row_sing">
+                <p class="header__singIn js_singIn">Sing in</p>
+                <button class="registration js_registration">Registration</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HEADER -->
+<header class="container">
+    <div class="header__row">
+        <div class="logo">
+            <a href="#" title="logo">
+                <svg width="81" height="24" viewBox="0 0 81 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.15 1.76007H14.02L23.26 23.0001H17.98L16.15 18.5001H7.89997L6.12997 23.0001H0.969971L10.15 1.76007ZM11.95 7.94007L9.36997 14.5401H14.56L11.95 7.94007Z"
+                          fill="#01996D"/>
+                    <path d="M24.8863 0.320068H29.3863V23.0001H24.8863V0.320068Z" fill="#01996D"/>
+                    <path d="M32.6793 8.42007H37.1793V23.0001H32.6793V8.42007ZM32.3193 3.83007C32.3193 3.11007 32.5693 2.50007 33.0693 2.00007C33.5893 1.48007 34.2093 1.22007 34.9293 1.22007C35.6493 1.22007 36.2593 1.48007 36.7593 2.00007C37.2793 2.50007 37.5393 3.11007 37.5393 3.83007C37.5393 4.55007 37.2793 5.17007 36.7593 5.69007C36.2593 6.19007 35.6493 6.44007 34.9293 6.44007C34.2093 6.44007 33.5893 6.19007 33.0693 5.69007C32.5693 5.17007 32.3193 4.55007 32.3193 3.83007Z"
+                          fill="#01996D"/>
+                    <path d="M38.8822 8.42007H43.7422L47.4322 18.3201H47.4922L50.9122 8.42007H55.4422L49.6822 23.0001H44.9122L38.8822 8.42007Z"
+                          fill="#01996D"/>
+                    <path d="M57.1422 8.42007H61.6422V23.0001H57.1422V8.42007ZM56.7822 3.83007C56.7822 3.11007 57.0322 2.50007 57.5322 2.00007C58.0522 1.48007 58.6722 1.22007 59.3922 1.22007C60.1122 1.22007 60.7222 1.48007 61.2222 2.00007C61.7422 2.50007 62.0022 3.11007 62.0022 3.83007C62.0022 4.55007 61.7422 5.17007 61.2222 5.69007C60.7222 6.19007 60.1122 6.44007 59.3922 6.44007C58.6722 6.44007 58.0522 6.19007 57.5322 5.69007C57.0322 5.17007 56.7822 4.55007 56.7822 3.83007Z"
+                          fill="#01996D"/>
+                    <path d="M64.3351 15.7101C64.3351 14.5501 64.5451 13.5001 64.9651 12.5601C65.3851 11.6201 65.9551 10.8201 66.6751 10.1601C67.4151 9.48007 68.2751 8.96007 69.2551 8.60007C70.2551 8.24007 71.3151 8.06007 72.4351 8.06007C73.5551 8.06007 74.6051 8.24007 75.5851 8.60007C76.5851 8.96007 77.4451 9.48007 78.1651 10.1601C78.9051 10.8201 79.4851 11.6201 79.9051 12.5601C80.3251 13.5001 80.5351 14.5501 80.5351 15.7101C80.5351 16.8701 80.3251 17.9201 79.9051 18.8601C79.4851 19.8001 78.9051 20.6101 78.1651 21.2901C77.4451 21.9501 76.5851 22.4601 75.5851 22.8201C74.6051 23.1801 73.5551 23.3601 72.4351 23.3601C71.3151 23.3601 70.2551 23.1801 69.2551 22.8201C68.2751 22.4601 67.4151 21.9501 66.6751 21.2901C65.9551 20.6101 65.3851 19.8001 64.9651 18.8601C64.5451 17.9201 64.3351 16.8701 64.3351 15.7101ZM68.8351 15.7101C68.8351 16.8101 69.1451 17.7001 69.7651 18.3801C70.4051 19.0601 71.2951 19.4001 72.4351 19.4001C73.5751 19.4001 74.4551 19.0601 75.0751 18.3801C75.7151 17.7001 76.0351 16.8101 76.0351 15.7101C76.0351 14.6101 75.7151 13.7201 75.0751 13.0401C74.4551 12.3601 73.5751 12.0201 72.4351 12.0201C71.2951 12.0201 70.4051 12.3601 69.7651 13.0401C69.1451 13.7201 68.8351 14.6101 68.8351 15.7101Z"
+                          fill="#01996D"/>
+                </svg>
+            </a>
+        </div>
+        <div class="navigate">
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#" title="Why Alivio">Why Alivio</a></li>
+                    <li><a href="#" title="Solutions">Solutions</a></li>
+                    <li><a href="#" title="Community">Community</a></li>
+                    <li><a href="#" title="Pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="do_account">
+            <div class="row_sing">
+                <p class="header__singIn js_singIn">Sing in</p>
+                <button class="registration js_registration">Registration</button>
+            </div>
+        </div>
+        <div id="mob_accordion" class="accordion">
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.25" y="1.75" width="29.5" height="0.5" stroke="black" stroke-width="0.5"/>
+                <rect x="0.25" y="10.75" width="29.5" height="0.5" stroke="black" stroke-width="0.5"/>
+                <rect x="0.25" y="19.75" width="29.5" height="0.5" stroke="black" stroke-width="0.5"/>
+            </svg>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<!--BANNER-->
+<section class="container banner">
+    <div class="banner__row">
+        <h1 class="title title-big">Be aware, <br>Manage well.</h1>
+        <p class="banner__text">Everyone experiences stress in&nbsp;different ways.
+            Let Alivio guide you, in&nbsp;a&nbsp;personalized journal experience,
+            to&nbsp;overcome your stress.
+        </p>
+        <button class="findYourWay js_message">Find Your Way</button>
+    </div>
+</section>
+
+<!--CONTENT-->
+
+<!--Instructions-->
+<section class="container instructions">
+    <div class="row__title">
+        <h4 class="title title-smallest">How it works
+        </h4>
+    </div>
+    <div class="instruction_row">
+        <h2 class="title title-middle">Understand & Release <br>the stress in 3 steps</h2>
+        <p class="content__text">Alivio offers as&nbsp;many journals it&nbsp;takes, tackling different areas such as&nbsp;anxiety,
+            overwhelmedness, sadness, or&nbsp;anger, and a&nbsp;variety of&nbsp;personal causes, to&nbsp;help you become aware of&nbsp;your
+            emotions, and guide you in&nbsp;how to&nbsp;manage stress.</p>
+    </div>
+    <div class="steps_row">
+        <div class="steps_item">
+            <div class="count count_01">
+                <svg width="145" height="84" viewBox="0 0 145 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.4238 12.5918C71.5488 16.3516 73.8682 20.7705 75.3818 25.8486C76.9443 30.8779 77.7256 36.1514 77.7256 41.6689C77.7256 48.3096 76.7734 54.2666 74.8691 59.54C72.9648 64.7646 70.3525 69.1104 67.0322 72.5771C63.6143 76.1416 59.5615 78.8271 54.874 80.6338C50.1865 82.4404 44.9619 83.3438 39.2002 83.3438C32.9014 83.3438 27.2861 82.2939 22.3545 80.1943C17.4229 78.0947 13.4189 75.2139 10.3428 71.5518C7.12012 67.7432 4.70312 63.2998 3.0918 58.2217C1.5293 53.0947 0.748047 47.5771 0.748047 41.6689C0.748047 35.8584 1.50488 30.5117 3.01855 25.6289C4.58105 20.7461 6.99805 16.3271 10.2695 12.3721C13.3945 8.56348 17.4229 5.56055 22.3545 3.36328C27.2861 1.16602 32.9258 0.0673828 39.2734 0.0673828C45.9629 0.0673828 51.7002 1.19043 56.4854 3.43652C61.2705 5.68262 65.25 8.73438 68.4238 12.5918ZM61.5391 41.6689C61.5391 30.0479 59.5371 21.0391 55.5332 14.6426C51.5781 8.24609 46.1826 5.04785 39.3467 5.04785C32.4131 5.04785 26.9443 8.24609 22.9404 14.6426C18.9365 21.0391 16.9346 30.0479 16.9346 41.6689C16.9346 52.7041 18.8389 61.5908 22.6475 68.3291C26.5049 75.0186 32.0225 78.3633 39.2002 78.3633C46.3779 78.3633 51.8955 75.0186 55.7529 68.3291C59.6104 61.5908 61.5391 52.7041 61.5391 41.6689ZM144.596 81H95.2305V75.7998C96.6953 75.7021 98.9658 75.5068 102.042 75.2139C105.167 74.8721 107.315 74.5303 108.487 74.1885C110.001 73.7002 111.148 72.9189 111.93 71.8447C112.76 70.7217 113.175 69.0615 113.175 66.8643V15.4482H94.9375V9.2959H98.9658C104.239 9.2959 108.951 8.31934 113.102 6.36621C117.301 4.41309 120.304 2.31348 122.11 0.0673828H128.189C128.043 3.24121 127.896 6.95215 127.75 11.2002C127.604 15.4482 127.53 19.2568 127.53 22.626V66.0586C127.53 67.7676 127.896 69.3057 128.629 70.6729C129.41 71.9912 130.509 72.9678 131.925 73.6025C133.194 74.1396 135.27 74.6279 138.15 75.0674C141.031 75.5068 143.18 75.751 144.596 75.7998V81Z"
+                          fill="#01996D" fill-opacity="0.2"/>
+                </svg>
+                <h3 class="title title-small">Personalize</h3>
+            </div>
+            <p class="content__text pOne">Answer a&nbsp;quick survey about how you express yourself, what
+                causes you stress, and what area would you like to&nbsp;work&nbsp;on.
+                This way, we&nbsp;can fully personalize your journal!</p>
+            <img src="images/notebook.png" alt="notebook">
+        </div>
+        <div class="steps_item">
+            <div class="count count_02">
+                <svg width="162" height="84" viewBox="0 0 162 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.2559 12.5918C71.3809 16.3516 73.7002 20.7705 75.2139 25.8486C76.7764 30.8779 77.5576 36.1514 77.5576 41.6689C77.5576 48.3096 76.6055 54.2666 74.7012 59.54C72.7969 64.7646 70.1846 69.1104 66.8643 72.5771C63.4463 76.1416 59.3936 78.8271 54.7061 80.6338C50.0186 82.4404 44.7939 83.3438 39.0322 83.3438C32.7334 83.3438 27.1182 82.2939 22.1865 80.1943C17.2549 78.0947 13.251 75.2139 10.1748 71.5518C6.95215 67.7432 4.53516 63.2998 2.92383 58.2217C1.36133 53.0947 0.580078 47.5771 0.580078 41.6689C0.580078 35.8584 1.33691 30.5117 2.85059 25.6289C4.41309 20.7461 6.83008 16.3271 10.1016 12.3721C13.2266 8.56348 17.2549 5.56055 22.1865 3.36328C27.1182 1.16602 32.7578 0.0673828 39.1055 0.0673828C45.7949 0.0673828 51.5322 1.19043 56.3174 3.43652C61.1025 5.68262 65.082 8.73438 68.2559 12.5918ZM61.3711 41.6689C61.3711 30.0479 59.3691 21.0391 55.3652 14.6426C51.4102 8.24609 46.0146 5.04785 39.1787 5.04785C32.2451 5.04785 26.7764 8.24609 22.7725 14.6426C18.7686 21.0391 16.7666 30.0479 16.7666 41.6689C16.7666 52.7041 18.6709 61.5908 22.4795 68.3291C26.3369 75.0186 31.8545 78.3633 39.0322 78.3633C46.21 78.3633 51.7275 75.0186 55.585 68.3291C59.4424 61.5908 61.3711 52.7041 61.3711 41.6689ZM161.859 81H93.2314V71.0391C94.5498 69.5254 96.3809 67.8408 98.7246 65.9854C101.068 64.0811 103.852 62.0303 107.074 59.833C109.027 58.5146 111.371 57.0742 114.105 55.5117C116.84 53.9492 119.94 52.2402 123.407 50.3848C127.265 48.334 130.219 46.5273 132.27 44.9648C134.369 43.4023 136.273 41.4736 137.982 39.1787C139.105 37.665 140.009 35.7852 140.692 33.5391C141.376 31.2441 141.718 27.9971 141.718 23.7979C141.718 17.6943 140.082 13.2266 136.811 10.3945C133.539 7.51367 129.34 6.07324 124.213 6.07324C121.039 6.07324 118.036 6.70801 115.204 7.97754C112.372 9.19824 110.248 10.9072 108.832 13.1045C109.174 14.667 109.589 16.5225 110.077 18.6709C110.614 20.8193 110.883 22.9189 110.883 24.9697C110.883 26.8252 110.102 28.4854 108.539 29.9502C107.025 31.3662 104.755 32.0742 101.728 32.0742C99.2861 32.0742 97.4062 31.2441 96.0879 29.584C94.7695 27.875 94.1104 25.6045 94.1104 22.7725C94.1104 20.1357 94.8428 17.499 96.3076 14.8623C97.7725 12.1768 99.8721 9.71094 102.606 7.46484C105.292 5.26758 108.612 3.48535 112.567 2.11816C116.522 0.750977 120.795 0.0673828 125.385 0.0673828C135.395 0.0673828 143.329 2.31348 149.188 6.80566C155.097 11.249 158.051 17.2061 158.051 24.6768C158.051 28.2412 157.514 31.4883 156.439 34.418C155.414 37.3477 153.729 39.9355 151.386 42.1816C148.798 44.6719 145.771 46.8203 142.304 48.627C138.837 50.3848 133.539 52.8506 126.41 56.0244C122.162 57.9287 118.207 59.9307 114.545 62.0303C110.883 64.0811 107.88 66.083 105.536 68.0361H161.859V81Z"
+                          fill="#01996D" fill-opacity="0.2"/>
+                </svg>
+                <h3 class="title title-small">Write & Understand</h3>
+            </div>
+            <p class="content__text pTwo">Write, draw, reflect, understand. Alivio will guide you through the prompts
+                and will help you manage your stress!</p>
+            <img src="images/workbooks.png" alt="workbook">
+        </div>
+        <div class="steps_item">
+            <div class="count count_03">
+                <svg width="161" height="108" viewBox="0 0 161 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.2686 12.5918C71.3936 16.3516 73.7129 20.7705 75.2266 25.8486C76.7891 30.8779 77.5703 36.1514 77.5703 41.6689C77.5703 48.3096 76.6182 54.2666 74.7139 59.54C72.8096 64.7646 70.1973 69.1104 66.877 72.5771C63.459 76.1416 59.4062 78.8271 54.7188 80.6338C50.0312 82.4404 44.8066 83.3438 39.0449 83.3438C32.7461 83.3438 27.1309 82.2939 22.1992 80.1943C17.2676 78.0947 13.2637 75.2139 10.1875 71.5518C6.96484 67.7432 4.54785 63.2998 2.93652 58.2217C1.37402 53.0947 0.592773 47.5771 0.592773 41.6689C0.592773 35.8584 1.34961 30.5117 2.86328 25.6289C4.42578 20.7461 6.84277 16.3271 10.1143 12.3721C13.2393 8.56348 17.2676 5.56055 22.1992 3.36328C27.1309 1.16602 32.7705 0.0673828 39.1182 0.0673828C45.8076 0.0673828 51.5449 1.19043 56.3301 3.43652C61.1152 5.68262 65.0947 8.73438 68.2686 12.5918ZM61.3838 41.6689C61.3838 30.0479 59.3818 21.0391 55.3779 14.6426C51.4229 8.24609 46.0273 5.04785 39.1914 5.04785C32.2578 5.04785 26.7891 8.24609 22.7852 14.6426C18.7812 21.0391 16.7793 30.0479 16.7793 41.6689C16.7793 52.7041 18.6836 61.5908 22.4922 68.3291C26.3496 75.0186 31.8672 78.3633 39.0449 78.3633C46.2227 78.3633 51.7402 75.0186 55.5977 68.3291C59.4551 61.5908 61.3838 52.7041 61.3838 41.6689ZM120.856 107.733C116.267 107.733 112.067 107.147 108.259 105.976C104.45 104.853 101.179 103.314 98.4443 101.361C95.71 99.4082 93.5859 97.1621 92.0723 94.623C90.6074 92.084 89.875 89.4717 89.875 86.7861C89.875 84.3936 90.4609 82.2451 91.6328 80.3408C92.8047 78.3877 94.6846 77.4111 97.2725 77.4111C100.202 77.4111 102.424 78.1436 103.938 79.6084C105.5 81.0244 106.281 82.6602 106.281 84.5156C106.281 86.0781 106.013 88.0557 105.476 90.4482C104.987 92.8408 104.597 94.5498 104.304 95.5752C104.646 96.0146 105.256 96.6006 106.135 97.333C107.062 98.0654 108.186 98.7246 109.504 99.3105C111.066 100.043 112.702 100.629 114.411 101.068C116.12 101.508 118.537 101.728 121.662 101.728C124.592 101.728 127.399 101.239 130.085 100.263C132.819 99.2861 135.212 97.7236 137.263 95.5752C139.411 93.3291 141.071 90.6924 142.243 87.665C143.464 84.6865 144.074 80.7559 144.074 75.873C144.074 73.2363 143.781 70.624 143.195 68.0361C142.658 65.4482 141.633 63.2021 140.119 61.2979C138.605 59.3936 136.53 57.9287 133.894 56.9033C131.306 55.8291 128.01 55.292 124.006 55.292H114.411V46.8691H120.783C127.521 46.8691 132.38 45.0137 135.358 41.3027C138.337 37.5918 139.826 32.001 139.826 24.5303C139.826 18.4268 138.386 13.8369 135.505 10.7607C132.624 7.63574 128.547 6.07324 123.273 6.07324C120.734 6.07324 118.635 6.39062 116.975 7.02539C115.363 7.61133 114.045 8.19727 113.02 8.7832C111.799 9.4668 110.798 10.2236 110.017 11.0537C109.235 11.8838 108.649 12.4941 108.259 12.8848C108.601 14.4473 109.016 16.376 109.504 18.6709C109.992 20.917 110.236 23.0654 110.236 25.1162C110.236 26.9229 109.455 28.5586 107.893 30.0234C106.379 31.4395 104.133 32.1475 101.154 32.1475C98.5664 32.1475 96.6621 31.2197 95.4414 29.3643C94.2695 27.5088 93.6836 25.3604 93.6836 22.9189C93.6836 20.3799 94.3916 17.792 95.8076 15.1553C97.2236 12.5186 99.3232 10.0527 102.106 7.75781C104.89 5.46289 108.283 3.60742 112.287 2.19141C116.291 0.775391 120.905 0.0673828 126.13 0.0673828C132.136 0.0673828 137.092 0.970703 140.998 2.77734C144.953 4.53516 148.054 6.68359 150.3 9.22266C152.497 11.7129 154.011 14.3252 154.841 17.0596C155.671 19.7939 156.086 22.1377 156.086 24.0908C156.086 26.5322 155.744 28.998 155.061 31.4883C154.377 33.9297 153.254 36.2002 151.691 38.2998C149.982 40.5947 147.712 42.6943 144.88 44.5986C142.097 46.4541 138.581 47.9678 134.333 49.1396V50.3115C137.067 50.5557 139.973 51.166 143.049 52.1426C146.174 53.1191 148.981 54.5596 151.472 56.4639C154.06 58.4658 156.184 61.0537 157.844 64.2275C159.504 67.3525 160.334 71.332 160.334 76.166C160.334 85.541 156.574 93.1338 149.055 98.9443C141.535 104.804 132.136 107.733 120.856 107.733Z"
+                          fill="#01996D" fill-opacity="0.2"/>
+                </svg>
+                <h3 class="title title-small">Alivio!</h3>
+            </div>
+            <p class="content__text pThree">Now you are aware, and have a&nbsp;way to&nbsp;manage and overcome your
+                own stress. What are you waiting for? Alivio today!</p>
+            <img src="images/yung_girl.png" alt="girl">
+        </div>
+    </div>
+</section>
+
+<!--End of Content-->
+<!--MOVIE-->
+<section class="container movie">
+    <div class="movie__row">
+        <div class="movie_discription">
+            <h3 class="title title-middle font-white">Let's hear about Kayla's success story</h3>
+            <p class="content__text_large">See how well Alivio works in a real customer’s life.
+            </p>
+
+            <button class="letsGetSt js_message">Let’s get started</button>
+        </div>
+        <iframe width="1350" height="480" src="https://www.youtube.com/embed/zAlN-O2jZDo" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </iframe>
+    </div>
+</section>
+
+<!--Portrait-->
+<section class="container product">
+    <div class="product__row">
+        <div class="portrait">
+            <div class="img-block">
+                <img src="images/Image_PORTR.png" alt="portrait">
+                <div class="personalize">
+                    <div class="title title_customise">Customized For</div>
+                    <div class="icon"><img src="images/Image_portrait_small.png" alt="small foto"></div>
+                    <div class="name_account">Mikayla</div>
+                    <h5 class="title title_cust_List">Your custom contents</h5>
+                    <div>
+                        <ul>
+                            <li class="cust_content">Understand Your Stress</li>
+                            <li class="cust_content">Anger Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product_discription">
+            <h4 class="title title-smallest ">Our product</h4>
+            <h2 class="title title-middle font-greenspecial indentSecond">You tell us your stress, We make your
+                diary</h2>
+            <p class="content__text indent">Everyone experiences&nbsp;it, and in&nbsp;different ways.<br>Let Alivio
+                guide you,
+                in&nbsp;a&nbsp;personalized journal experience, to&nbsp;overcome your stress.
+            </p>
+            <button class="findYourWay js_message">Find Your Way</button>
+        </div>
+    </div>
+
+</section>
+<!--Footer-->
+<footer class="container">
+    <div class="footer__row font-white">
+        <div class="footer__row-item">
+            <div>
+                <a href="#" title="logo">
+                    <svg width="108" height="32" viewBox="0 0 108 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2 2.68H18.36L30.68 31H23.64L21.2 25H10.2L7.84 31H0.96L13.2 2.68ZM15.6 10.92L12.16 19.72H19.08L15.6 10.92ZM32.8484 0.759998H38.8484V31H32.8484V0.759998ZM43.2391 11.56H49.2391V31H43.2391V11.56ZM42.7591 5.44C42.7591 4.48 43.0924 3.66667 43.7591 3C44.4524 2.30667 45.2791 1.96 46.2391 1.96C47.1991 1.96 48.0124 2.30667 48.6791 3C49.3724 3.66667 49.7191 4.48 49.7191 5.44C49.7191 6.4 49.3724 7.22667 48.6791 7.92C48.0124 8.58667 47.1991 8.92 46.2391 8.92C45.2791 8.92 44.4524 8.58667 43.7591 7.92C43.0924 7.22667 42.7591 6.4 42.7591 5.44ZM51.5097 11.56H57.9897L62.9097 24.76H62.9897L67.5497 11.56H73.5897L65.9097 31H59.5497L51.5097 11.56ZM75.8563 11.56H81.8563V31H75.8563V11.56ZM75.3763 5.44C75.3763 4.48 75.7096 3.66667 76.3763 3C77.0696 2.30667 77.8963 1.96 78.8563 1.96C79.8163 1.96 80.6296 2.30667 81.2963 3C81.9896 3.66667 82.3363 4.48 82.3363 5.44C82.3363 6.4 81.9896 7.22667 81.2963 7.92C80.6296 8.58667 79.8163 8.92 78.8563 8.92C77.8963 8.92 77.0696 8.58667 76.3763 7.92C75.7096 7.22667 75.3763 6.4 75.3763 5.44ZM85.4469 21.28C85.4469 19.7333 85.7269 18.3333 86.2869 17.08C86.8469 15.8267 87.6069 14.76 88.5669 13.88C89.5535 12.9733 90.7002 12.28 92.0069 11.8C93.3402 11.32 94.7535 11.08 96.2469 11.08C97.7402 11.08 99.1402 11.32 100.447 11.8C101.78 12.28 102.927 12.9733 103.887 13.88C104.874 14.76 105.647 15.8267 106.207 17.08C106.767 18.3333 107.047 19.7333 107.047 21.28C107.047 22.8267 106.767 24.2267 106.207 25.48C105.647 26.7333 104.874 27.8133 103.887 28.72C102.927 29.6 101.78 30.28 100.447 30.76C99.1402 31.24 97.7402 31.48 96.2469 31.48C94.7535 31.48 93.3402 31.24 92.0069 30.76C90.7002 30.28 89.5535 29.6 88.5669 28.72C87.6069 27.8133 86.8469 26.7333 86.2869 25.48C85.7269 24.2267 85.4469 22.8267 85.4469 21.28ZM91.4469 21.28C91.4469 22.7467 91.8602 23.9333 92.6869 24.84C93.5402 25.7467 94.7269 26.2 96.2469 26.2C97.7669 26.2 98.9402 25.7467 99.7669 24.84C100.62 23.9333 101.047 22.7467 101.047 21.28C101.047 19.8133 100.62 18.6267 99.7669 17.72C98.9402 16.8133 97.7669 16.36 96.2469 16.36C94.7269 16.36 93.5402 16.8133 92.6869 17.72C91.8602 18.6267 91.4469 19.8133 91.4469 21.28Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+
+            </div>
+            <ul>
+                <li><a href="#" title="Why Alivio">Why Alivio</a></li>
+                <li><a href="#" title="Solutions">Solutions</a></li>
+                <li><a href="#" title="Community">Community</a></li>
+                <li><a href="#" title="Pricing">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="footer__row-item">
+            <form method="get">
+                <input placeholder="Send your e-mail for new offers" type="email" class="sendEmail">
+                <button class="send">Send</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<!--Modal-->
+
+<div id="modal_message" class="form send-message-form">
+    <h2 class="title_form">Wright to Us</h2>
+    <div class="close"></div>
+    <form method=get class="rowForm">
+        <label for="name_log">Your name: </label>
+        <input type="text" id="name_log">
+        <label for="yourEmail">Your E-mail: </label>
+        <input type="email" id="yourEmail">
+        <textarea></textarea>
+        <input type='submit' value="Send" class="sub_registr">
+    </form>
+</div>
+<div id="modal_singIn" class="form singIn-form">
+    <div class="close"></div>
+    <h2 class="title_form">Welcome to Alivio</h2>
+    <form method=get class="rowForm">
+        <label for="y-Email">Your E-mail: </label>
+        <input type="email" id="y-Email">
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+        <input type='submit' value="Send" class="sub_registr">
+    </form>
+</div>
+<div id="modal_reg" class="form registration-form">
+    <h2 class="title_form">Registration Form</h2>
+    <div class="close"></div>
+    <form method=get class="rowForm">
+        <label for="wright-name">Your name: </label>
+        <input type="text" id="wright-name">
+        <label for="wright-Email">Your E-mail: </label>
+        <input type="email" id="wright-Email">
+        <label for="wright-pass">Password: </label>
+        <input type="password" id="wright-pass">
+        <label for="repeate-pass">Repeate password: </label>
+        <input type="password" id="repeate-pass">
+        <input type='submit' value="Send" class="sub_registr">
+    </form>
+</div>
+<div id="modal_background"></div>
+</body>
+</html>

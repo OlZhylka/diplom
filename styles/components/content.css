@@ -1,0 +1,184 @@
+.instructions {
+    padding: 169px 232px 51px 275px;
+}
+.row__title {
+    box-sizing: border-box;
+    display: flex;
+    }
+.instruction_row, .steps_row{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+.instruction_row {
+    padding-bottom: 130px;
+    margin-right: 22px;
+}
+.instruction_row h2, .instruction_row p {
+    box-sizing: border-box;
+    flex-basis: 50%;
+}
+.instruction_row .content__text{
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.steps_item img{
+    max-width: 390px;
+}
+.steps_item:nth-child(1) {
+    flex-basis: 27.6%;
+    }
+.steps_item:nth-child(2) {
+    margin-top: 240px;
+    flex-basis: 27.8%;
+   }
+.steps_item:nth-child(3) {
+    margin-top: 25px;
+    flex-basis: 31.2%;
+}
+.count {
+    position: relative;
+    }
+.count.count_01 h3 {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+.content__text.pOne{
+    margin: 55px 0 60px 0;
+}
+.count.count_02 h3 {
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+.content__text.pTwo {
+    margin: 55px 0 37px 0;
+}
+.count.count_03 h3 {
+    position: absolute;
+    top: 50px;
+    left: 115px;
+}
+.content__text.pThree{
+    margin: 46px 0 48px 0;
+}
+
+/*Notebook*/
+@media (max-width: 1740px) {
+    .instructions {
+        padding: 118px 174px 36px 190px;
+    }
+    .instruction_row {
+        padding-bottom: 91px;
+        margin-right: 15px;
+    }
+}
+
+/*Ipad*/
+@media (max-width: 1040px) {
+    .instructions {
+        padding: 74px 115px 31px 120px;
+    }
+
+    .instruction_row {
+        padding-bottom: 78px;
+        margin-right: 0;
+    }
+
+    .steps_item img {
+        max-width: 235px;
+    }
+
+    .instruction_row .content__text {
+        padding: 0 5px;
+    }
+
+    .count_03 svg {
+        width: 122px;
+        height: 66px;
+    }
+
+    .count_02 svg {
+        width: 97px;
+        height: 50px;
+    }
+
+    .count_01 svg {
+        width: 87px;
+        height: 50px;
+    }
+
+    .count.count_01 h3 {
+        top: 30px;
+        left: 50px;
+    }
+
+    .count.count_02 h3 {
+        top: 30px;
+        left: 43px;
+    }
+
+    .count.count_03 h3 {
+        top: 29px;
+        left: 82px;
+    }
+
+    .steps_item:nth-child(2) {
+        margin-top: 155px;
+    }
+
+    .steps_item:nth-child(3) {
+        margin-top: 12px;
+}
+    .content__text.pTwo {
+        margin: 32px 0 23px 0;
+    }
+
+    .content__text.pThree{
+        margin: 28px 0 30px 0;
+    }
+    .content__text.pOne{
+        margin: 35px 0 38px 0;
+    }
+}
+@media (max-width: 768px) {
+    .instructions {
+        padding: 35px 60px 0px 60px;
+    }
+
+    .instruction_row, .steps_row{
+        padding-bottom: 30px;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .steps_item img {
+        max-width: 290px;
+    }
+    .steps_item:nth-child(2) {
+        margin-top: 25px;
+        transform: translateY(50%);
+    }
+    .steps_item:nth-child(3) {
+        margin-top: 25px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 375px) {
+    .steps_item:nth-child(2) {
+        transform: translateY(0);
+    }
+
+    .instructions {
+        padding: 35px 40px 0px;
+    }
+    .instruction_row h2, .instruction_row p {
+        flex-basis: 100%;
+    }
+    .instruction_row, .steps_row {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,158 @@
+header {
+    padding: 17px 275px;
+}
+
+.accordion {
+    display: none;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    flex-basis: 18.5%;
+}
+
+.navigate {
+    flex-basis: 51.5%;
+}
+
+.do_account {
+    flex-basis: 30%;
+}
+
+.header__nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigate .header__nav li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+.row_sing {
+    display: flex;
+    align-items: center;
+}
+
+.do_account .row_sing {
+    justify-content: flex-end;
+}
+
+.header__singIn {
+    /*margin-right: 35px;*/
+    padding-right: 35px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/*Menu mobile*/
+.mobileMenu {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+}
+.row__mobile_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.navigate_mobile .header__nav, .do_account_mobile {
+    padding: 24px;
+}
+
+.navigate_mobile .header__nav li {
+    padding-bottom: 15px;
+}
+
+.navigate_mobile .header__nav ul {
+    padding-bottom: 10px;
+}
+
+.do_account_mobile .row_sing {
+    justify-content: space-between;
+}
+
+/*Notebook*/
+@media (max-width: 1740px) {
+    header {
+        padding: 17px 190px;
+    }
+
+    .header__singIn {
+        padding-right: 25px;
+    }
+
+    .header__nav li {
+        margin-right: 40px;
+    }
+}
+
+/*Ipad*/
+@media (max-width: 1040px) {
+    header {
+        padding: 17px 120px;
+    }
+
+    header .logo svg {
+        width: 65px;
+        height: 33px;
+    }
+
+    .header__singIn {
+        padding-right: 21px;
+    }
+
+    .navigate .header__nav li{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 17px 60px;
+    }
+
+    .header__singIn {
+        padding-right: 16px;
+    }
+
+       .navigate .header__nav li {
+        margin-right: 25px;
+    }
+}
+/*Mobile*/
+@media (max-width: 375px) {
+    header {
+        padding: 17px 40px;
+    }
+    .header__row {
+        justify-content: space-between;
+    }
+
+    .navigate, .do_account {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+}

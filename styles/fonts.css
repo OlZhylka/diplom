@@ -1,0 +1,123 @@
+body {font-family: 'Lato', sans-serif;}
+header li {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #292929;
+}
+.header__singIn {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+}
+button {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.banner__text {
+    font-size: 20px;
+    line-height: 1.55;
+    color: #484848;
+}
+.title-big {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 1.14;
+    color: #01996D;
+    }
+.title-smallest {
+    font-size: 24px;
+    line-height: 1.57;
+    color: #424242;
+}
+.title-middle {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.57;
+    color: #01996D;
+}
+.content__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #424242;
+}
+.title-small {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.content__text_large {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #FFFFFF;
+  }
+footer li {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: bolder;
+}
+.sendEmail {
+    font-size: 20px;
+}
+
+.title_form {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #292929;
+}
+.font-white {
+    color: #FFFFFF;
+}
+.font-greenspecial {
+    color: #01996D;
+}
+/*Ipad*/
+    @media (max-width: 1040px) {
+        .title-big {
+            font-size: 38px;
+        }
+        header li, .header__singIn, button, .banner__text, .content__text, .sendEmail {
+            font-size: 12px;
+        }
+        .title-smallest {
+            font-size: 14px;
+        }
+        .title-middle {
+            font-size: 30px;
+        }
+        .title-small {
+            font-size: 18px;
+        }
+
+        .content__text_large, footer li {
+            font-size: 14px;
+        }
+        .title_form {
+            font-size: 17px;
+        }
+
+    }
+@media (max-width: 768px) {
+    .title-big {
+        font-size: 28px;
+    }
+    .title-middle {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 375px) {
+    .title-smallest {
+        font-size: 12px;
+    }
+    footer li {
+        margin-top: 15px;
+    }
+}
